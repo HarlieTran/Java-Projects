@@ -1,0 +1,574 @@
+body {
+    font-family: "Segoe UI", sans-serif;
+    font-weight: lighter;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+}
+button:hover {
+    scale: calc(1.1);
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+
+}
+
+a[highlight] {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 40px;
+    color: white;
+}
+.default-view {
+    background-color: #f6f4f0;
+}
+.text-button {
+    color: #4d4c48; /* Inherit text color from the parent */
+    font: inherit; /* Inherit font styling */
+    cursor: pointer; /* Retain the pointer cursor for buttons */
+}
+
+.text-button:hover {
+    scale: calc(1.1);
+    background: #4d4c48;
+    color: #ffffff;
+}
+
+.text-button:focus {
+    outline: none; /* Remove focus outline */
+}
+/* welcome-view.css */
+
+/* Important: Make the app layout background transparent */
+vaadin-app-layout::part(navbar) {
+    background: transparent;
+    box-shadow: none;
+}
+
+/* Make the whole app layout take the full viewport */
+vaadin-app-layout {
+    height: 100vh;
+    width: 100vw;
+    background: transparent;
+}
+
+/* Style the header */
+.header {
+    padding: 20px;
+    height: 70px;
+    font-weight: lighter;
+    z-index: 100;
+}
+
+.logo {
+    letter-spacing: 0.15em;
+    font-size: 30px;
+    font-family: ".VnBook-Antiqua";
+    margin: 0 auto;
+    text-align: center;
+    color: #4d4c48;
+}
+
+.nav-items {
+    display: flex;
+    gap: 20px;
+    color: #a87355;
+    font-weight: lighter;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-item {
+    margin: 0 10px;
+    color: #a87355;
+    font-size: 14px;
+    font-weight: lighter;
+    padding: 0 10px;
+    text-decoration: none;
+    border-bottom: 1px solid #a87355;
+}
+.nav-item:hover {
+    scale: calc(1.1);
+    cursor: pointer;
+}
+
+.icon-button {
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+/* Hero section styles */
+.landing-page {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: url("images/bg.jpg");
+    background-size: cover;
+}
+
+.content-overlay {
+    position: absolute;
+    top: 200px;
+    left: 680px;
+    max-width: 50%;
+    z-index: 2;
+    margin: 10px;
+}
+
+.essential-scents {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #4d4c48;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    letter-spacing: 2px;
+}
+
+.title-text {
+    font-size: 3.5rem;
+    font-weight: lighter;
+    color: #4d4c48;
+    line-height: 1.1;
+    letter-spacing: 3px;
+    margin: 0;
+}
+
+.title-text:nth-of-type(2) {
+    margin-bottom: 16px;
+}
+
+.cursive-text {
+    font-size: 16px;
+    font-weight: lighter;
+    font-style: italic;
+    display: block;
+    margin-bottom: 16px;
+}
+
+.login-button {
+    backdrop-filter: blur(20px);
+    background-color: #f6f4f0;
+    border: 1px solid rgba(255, 255, 255, 0.196);
+    color: #4d4c48;
+    border: none;
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 16px;
+}
+
+.register-button {
+    backdrop-filter: blur(20px);
+    background-color: #f6f4f0;
+    border: 1px solid rgba(255, 255, 255, 0.196);
+    color: #4d4c48;
+    border: none;
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 16px;
+}
+
+.continue-button {
+    backdrop-filter: blur(20px);
+    background-color: #f6f4f0;
+    border: 1px solid rgba(255, 255, 255, 0.196);
+    color: #4d4c48;
+    border: none;
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 16px;
+}
+.content-overlay vaadin-button:hover {
+    scale: calc(1.1);
+}
+
+.welcome-card {
+    position: relative;
+    z-index: 2;
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255,0.105);
+    border: 1px solid rgba(255, 255, 255, 0.196);
+    padding: 5px;
+    border-radius: 2em;
+    text-align: center;
+}
+
+.welcome-view h1 {
+    font-weight: lighter;
+}
+
+
+/* login-view.css */
+/* Remove the background of the login form */
+
+/* Custom styles for the LoginForm */
+
+.custom-login-form vaadin-text-field,
+.custom-login-form vaadin-password-field,
+.custom-login-form vaadin-email-field {
+    width: 80%;
+    margin-bottom: 15px;
+}
+.custom-login-form vaadin-button {
+    width: 80%;
+    background-color: #f6f4f0;
+    color: #4d4c48;
+    border-radius: 5px;
+    padding: 10px;
+    align-self: center;
+
+}
+.login-card {
+    position: relative;
+    z-index: 2;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255,0.105);
+    border: 1px solid rgba(255, 255, 255, 0.196);
+    padding: 5px;
+    margin: 20px;
+    border-radius: 2em;
+    text-align: center;
+    color: #4d4c48;
+    gap: 0px;
+}
+vaadin-login-form-wrapper {
+    border: none;
+    background: transparent;
+    box-shadow: none;
+    margin-bottom: 0;
+    padding: 0;
+}
+vaadin-login-form-wrapper::part(form-title) {
+    font-size: 20px;
+    font-weight: 500;
+    color: #4d4c48;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    letter-spacing: 2px;
+}
+.custom-login-form vaadin-button:hover {
+    cursor: pointer;
+    background-color: #4d4c48;
+    color: #f6f4f0;
+}
+.back-button {
+    width: 65%;
+    background-color: #f6f4f0;
+    color: #4d4c48;
+    border-radius: 5px;
+    padding: 10px;
+    align-self: center;
+    margin-bottom: 20px;
+}
+.back-button:hover {
+    cursor: pointer;
+    background-color: #4d4c48;
+    color: #f6f4f0;
+}
+
+.login-view {
+    background: url("images/lg.jpg");
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+/** Registration View **/
+.register-view {
+    background: url("images/lg.jpg");
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.register-layout {
+    position: relative;
+    z-index: 2;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255,0.105);
+    border: 1px solid rgba(255, 255, 255, 0.196);
+    border-radius: 2em;
+    text-align: center;
+    color: #4d4c48;
+    padding: 15px;
+    gap: 5px;
+    margin: 20px;
+}
+
+.register-layout vaadin-button:hover {
+    scale: calc(1.1);
+}
+
+.register-layout button:hover {
+    cursor: pointer;
+    background-color: #4d4c48;
+    color: #f6f4f0;
+    scale: calc(1.1);
+}
+.register-layout vaadin-text-field,
+.register-layout vaadin-password-field,
+.register-layout vaadin-email-field,
+.register-layout vaadin-combo-box {
+    width: 80%;
+}
+.regis-text {
+    font-size: 20px;
+    font-weight: 500;
+    color: #4d4c48;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    letter-spacing: 2px;
+}
+
+
+/** Product List View**/
+.product-list-view {
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    margin: 20px;
+}
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 12px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: #4d4c48;
+    color: #fff;
+}
+
+.product-card img {
+    flex: 0 0 70%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-height: 70%;
+}
+.details {
+    border-bottom: 1px solid #ffffff;
+}
+.details:hover {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #4d4c48;
+    scale: calc(1.1);
+    cursor: pointer;
+}
+
+.info-container {
+    flex: 0 0 30%; /* Set the remaining 30% for info */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center items within this section */
+    align-items: flex-start; /* Optional: Center align text/buttons */
+    padding-top: 0;
+    margin-top: 0;
+    padding-left: 20px;/* Add spacing around the info content */
+}
+
+
+/* Product Details View */
+.product-details-view {
+    padding: 2em;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    min-height: 400px;
+}
+.cart-button {
+    background: none;
+    width: 100%;
+    height: auto;
+    border: 1px solid #4d4c48;
+    color: #4d4c48;
+    text-decoration: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+}
+.cart-button:hover {
+    scale: calc(1.1);
+    background: #eae6e0;
+    color: #4d4c48;
+    border: none;
+}
+.buy-button {
+    background: #4d4c48;
+    width: 100%;
+    height: auto;
+    border: 1px solid #4d4c48;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+}
+.buy-button:hover {
+    scale: calc(1.1);
+    background: #eae6e0;
+    color: #4d4c48;
+    border: none;
+}
+.quantity {
+    color: #4d4c48;
+    width: 100%;
+}
+
+/* Image and Info Layout */
+.image-and-info-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 2em;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    min-height: 400px;
+    padding: 10px
+}
+
+.quote {
+    font-size: 15px;
+    font-weight: lighter;
+    font-style: italic;
+    display: block;
+    margin: 20px auto;
+}
+.product-name {
+    font-size: 25px;
+    font-weight: lighter;
+    color: #4d4c48;
+    line-height: 1.1;
+    letter-spacing: 3px;
+    margin: 0;
+}
+.product-details {
+    font-size: 16px;
+}
+
+/* Product Image */
+.product-image {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Product Info */
+.product-info {
+    flex: 1;
+    padding: 20px;
+    max-height: 100%;
+    overflow: hidden;
+    gap: 10px;
+}
+
+/** AdminView.css**/
+/* Base link style */
+.link {
+    text-decoration: none; /* Remove underline */
+    color: #4d4c48; /* Default color (blue) */
+    font-weight: lighter; /* Make text bold */
+    padding: 5px 10px; /* Add some padding for clickable area */
+}
+
+/* Hover state */
+.link:hover {
+    text-decoration: underline; /* Add underline on hover */
+    background-color: #4d4c48; /* Light gray background on hover */
+    color: #ffffff; /* Darker blue */
+    cursor: pointer;
+}
+
+/* Active (clicked) state */
+.link:active {
+    color: #4d4c48; /* Even darker blue */
+    background-color: #f6f4f0; /* Slightly darker gray background */
+    text-decoration: none;
+    border-left: 1px solid #4d4c48/* Keep underline optional */
+}
+
+/* Current (active) page state */
+.router-link-active {
+    color: #4d4c48; /* Even darker blue */
+    background-color: #f6f4f0; /* Slightly darker gray background */
+    text-decoration: none;
+    border-left: 1px solid #4d4c48/* Keep underline optional */
+}
+.list-view {
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-left: 20px;
+    max-width: 97%;
+    overflow: hidden;
+}
+/* Change the entire drawer background */
+[part="drawer"] {
+    background-color: #f6f4f0; /* Your custom color */
+}
+
+/* Adjust the main layout background if needed */
+vaadin-app-layout {
+    background-color: #f6f4f0; /* Your custom color */
+}
+
+/* Ensure no internal padding leaks */
+[part="drawer"] .custom-drawer {
+    padding: 0;
+    margin: 0;
+}
+.custom-drawer {
+    border-radius: 5px;
+    margin: 0;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(77, 76, 72, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.196);
+    width: 15%; /* Set width to 25% of the viewport width */
+    max-width: 300px; /* Optional: Add a pixel-based maximum width */ /* Optional: Add a pixel-based minimum width for responsiveness */
+    height: 100%; /* Ensure it spans the full height */
+
+}
+
+/* Make drawer responsive for small screens */
+@media screen and (max-width: 768px) {
+    .custom-drawer {
+        width: 100%; /* Full width for small screens */
+        max-width: none; /* Remove the maximum width constraint */
+    }
+}
+
+
+
+
