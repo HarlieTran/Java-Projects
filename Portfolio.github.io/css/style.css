@@ -1,0 +1,152 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /*font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;*/
+    font-family: 'EB Garamond', serif;
+    color: #333;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+a {
+    color: #000;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    margin-right: 20px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+h1 {
+    margin-bottom: 40px;
+    font-weight: normal;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 65px; 
+}
+
+.left-area {
+    margin: 80px 0;
+    width: 30%;
+}
+.right-area {
+    margin: 80px 0;
+    width: 70%; 
+}
+
+/* Header Styles */
+header {
+    padding: 40px 0 20px;
+    margin-left: 0;
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: 900;
+    letter-spacing: -3px;
+    font-family: 'Arial Black', sans-serif;
+    text-transform: uppercase;
+}
+
+/* Main Content Styles */
+
+.intro {
+    font-size: 1.5rem;
+}
+
+.intro p {
+    margin-bottom: 1rem;
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 60px;
+}
+
+h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.experience-item {
+    margin-bottom: 15px;
+}
+
+.position {
+    font-weight: 500;
+}
+
+.timeline {
+    color: #555;
+}
+
+/* Testimonial Styles */
+.testimonial {
+    margin: 60px 0;
+    padding-top: 20px;
+    border-top: 1.5px solid #eee;
+    font-style: italic;
+}
+
+.testimonial-source {
+    margin-top: 10px;
+    font-style: normal;
+    font-size: 0.9rem;
+}
+
+/* Footer Styles */
+footer {
+    padding: 20px 0;
+    font-size: 0.9rem;
+    color: #888;
+    max-width: 800px;
+}
+
+footer div {
+    padding-bottom: 10px;
+}
+
+.social-links a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding-right: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .logo {
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+
+    .intro {
+        font-size: 1.2rem;
+        margin: 40px 0;
+    }
+
+    main {
+        margin-left: 5%;
+    }
+
+    footer {
+        margin-left: 5%;
+    }
+}

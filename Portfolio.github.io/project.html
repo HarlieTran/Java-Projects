@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harlie Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/project.css">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="nav">
+        <div class="logo">Harlie Tran</div>
+        <div>
+            <a href="about-me.html">About</a>
+            <a href="#">Projects</a>
+        </div>
+    </header>
+
+    <!-- Content -->
+    <main class="content-container">
+        <div class="left-area">
+            <img src="images/n8n.png">
+        </div>
+        <div class="right-area">
+            <h3>AI Agents: Using n8n workflow to detect suspicious login attempts</h1>
+            <p>This project focuses on the implementation of an n8n workflow designed to monitor and alert on suspicious database login
+            activities. The system checks for failed login attempts in PostgreSQL every 5 minutes, filters results, enriches data
+            with geolocation, integrates threat intelligence, sends email alerts, and logs events to MongoDB.</p>
+            <p><i>n8n, AWS RDS Logs, PostgreSQL, MongoDB, Email Service Node (SMTP), Amazon EC2 (Cloud deployment), HTTP services</i></p>
+            <a href="https://drive.google.com/file/d/16rIwLedFHMV5GsiqU6NmITx8TDK4V5px/view?usp=drive_link" target="_blank">Demo</a>
+            <a href="https://github.com/HarlieTran/AI-Agents.git" target="_blank">github</a>
+        </div>
+    </main>
+
+    <main class="content-container">
+        <div class="left-area">
+            <img src="images/hr-start-schema.png">
+        </div>
+        <div class="right-area">
+            <h3>Oracle ETL: Using PL/SQL to extract data from the operational database (Oracle Human Resource dataset), tranform and load to data warehouse</h1>
+                <p>This project involves the design and implementation of a Human Resource Data Warehouse aimed at enhancing workforce
+                analytics and strategic HR decision-making. Using Oracle technologies such as Oracle Data Integrator (ODI), PL/SQL, and
+                OLAP, the team transformed normalized HR data into a dimensional star schema to support fast querying and advanced
+                reporting. The system incorporates an ETL pipeline, multidimensional OLAP cubes, and a Power BI dashboard to analyze key
+                metrics like salary trends, job transitions, and regional distributions. The final solution enables HR professionals to
+                gain actionable insights through interactive dashboards and flexible data exploration.</p>
+                <p><i>Oracle, PL/SQL, Store Procedures, Star-Schema Model, Relational Model, Oracle Data Integrator, 
+                    OLAP Cube, Oracle Analytics Management View</i>
+                </p>
+                <a href="https://github.com/HarlieTran/ETL-ELT-Projects/tree/main/oracle-human-resources-project" target="_blank">github</a>
+        </div>
+    </main>
+
+    <main class="content-container">
+        <div class="left-area">
+            <img src="images/walmart-report.png">
+        </div>
+        <div class="right-area">
+            <h3>Power BI: Using Power BI to visualize report data for Walmart's departments</h1>
+                <p>The main goal of this project is to create a sophisticated dashboard and reporting system specifically for the four
+                departments of customer service, sales, information technology, and human resources. This dashboard's objectives are to
+                improve data visibility, optimize processes, and offer actionable insights—all of which will contribute to the growth
+                and efficiency of these vital services.</p>
+                <p><i>Power BI, Sharepoint, Data Modeling, Microsoft Excel, DAX, Power Query</i>
+                </p>
+                <a href="https://github.com/HarlieTran/Report-Dashboard/tree/main/Walmart-Report"
+                    target="_blank">github</a>
+        </div>
+    </main>
+
+    <main class="content-container">
+        <div class="left-area">
+            <img src="images/candle-website.png">
+        </div>
+        <div class="right-area">
+            <h3>Java Ecommerce Website: Using java to build ecommerce website whose product is scented candles</h1>
+                <p>The Essential Scents project is a web-based e-commerce platform developed for the sale of premium scented candles,
+                focusing on delivering a seamless and intuitive shopping experience. It features distinct user roles—regular users and
+                administrators—with tailored journeys including product browsing, account management, and administrative dashboards for
+                inventory and user control. Core functionalities include secure authentication, product filtering, cart management, and
+                a structured layout.</p>
+                <p><i>Java, Vaadin, Spring Boot, Spring Security, MySQL, CSS</i>
+                </p>
+                <a href="https://github.com/HarlieTran/Candles-Ecommerce-Website" target="_blank">github</a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/harlie-tran-916ab0118/" target="_blank" aria-label="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+            </a>
+            <a href="mailto:anhtran.ngh@gmail.com" aria-label="Email">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+            </a>
+        </div>
+        <div>© 2025 - Harlie Tran</div>
+    </footer>
+</body>
+
+</html>

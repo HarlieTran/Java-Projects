@@ -1,0 +1,14 @@
+
+.content-container {
+    border-bottom: 1.5px solid #eee;
+}
+.right-area p {
+    margin: 20px 0;
+}
+.left-area img {
+    width: 100%;
+    border-radius: 5px;
+    float: left;
+    margin-right: 40px; 
+    object-fit: cover;
+}
